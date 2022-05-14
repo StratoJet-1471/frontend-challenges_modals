@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Popups</title>
+</head>
+<body>
+    <div class="wrapper">  
+
+        <span class="text-content__title">Продажа парапланов</span>
+        <span name="opener-of-popup1" class="popup-opener">Сделать заказ</span>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque totam tempora molestiae, laudantium repellendus, hic minus dolorem deleniti consequuntur mollitia dolores quisquam cum nostrum sit vitae illo excepturi quaerat corporis! 
+        </p>
+        <img src="img/para-1.jpg" alt="Paraplan-1">
+        <img src="img/para-2.jpeg" alt="Paraplan-2">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem provident at veniam omnis delectus obcaecati maxime illo nemo quasi sit? Laboriosam, vel omnis excepturi inventore similique expedita dolores minima ut?
+        </p>
+        <img src="img/para-4.png" alt="Paraplan-4">
+        <img src="img/para-5.png" alt="Paraplan-5">
+        <span name="opener-of-popup2" class="popup-opener">Обратная связь</span>
+    </div>
+    <div id="popup1" class="popup__full-area">
+        <!--Мы хотим, чтобы попап закрывался по клику не только на крестик, но и на фоновую область. Поэтому мы делаем этот дополнительный слой, с обработчиком клика по нему таким же, как у крестика, и с помощью стилей растягиваем его на всю фоновую область (см. style.css).-->
+        <div class="popup__background-as-closing-tool"></div>
+        <div class="popup__container">
+            <div class="popup">
+                <span class="popup__closing-tool">X</span>
+                <div class="popup__title">Сделать заказ</div>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero cumque, minima deserunt eum soluta sit, enim pariatur, nostrum rem deleniti quidem et facilis fugit ipsa. Ipsum, distinctio eaque? Atque, iure.</span>
+            </div>
+        </div>
+     </div> 
+     <div id="popup2" class="popup__full-area">
+        <div class="popup__background-as-closing-tool"></div>
+        <div class="popup__container">
+            <div class="popup popup_gold">
+                <span class="popup__closing-tool">X</span>
+                <div class="popup__title">Напишите нам</div>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero cumque, minima deserunt eum soluta sit, enim pariatur, nostrum rem deleniti quidem et facilis fugit ipsa. Ipsum, distinctio eaque? Atque, iure.</span>
+            </div>
+        </div>
+     </div> 
+     <script src="js/script.js"></script>
+</body>
+</html>
